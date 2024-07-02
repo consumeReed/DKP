@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="boss.js"></script>
-    <script src="pointparser.js"></script>
-    <script src="count.js"></script>
-    <script src="playeraliases.js"></script>
+    <script src="DKPCounter/count/boss.js"></script>
+    <script src="DKPCounter/count/pointparser.js"></script>
+    <script src="DKPCounter/count/count.js"></script>
+    <script src="DKPCounter/count/playeraliases.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
     <script>
         function formatDKP() {
@@ -28,7 +28,7 @@
 		var playerAliases = "";
 		
 		var client = new XMLHttpRequest();
-		client.open('GET', 'aliases.txt');
+		client.open('GET', 'DKPCounter/count/aliases.txt');
 		client.onload = function() {
   			playerAliases = client.responseText
 			document.getElementById("playeraliases").value = playerAliases;
