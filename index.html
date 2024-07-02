@@ -28,7 +28,7 @@
 		var playerAliases = "";
 		
 		var client = new XMLHttpRequest();
-		client.open('GET', 'http://raw.githubusercontent.com/consumeReed/DKP/main/DKPCounter/count/aliases.txt');
+		client.open('GET', 'https://raw.githubusercontent.com/consumeReed/DKP/main/DKPCounter/count/aliases.txt');
 		client.onload = function() {
   			playerAliases = client.responseText
 			document.getElementById("playeraliases").value = playerAliases;
