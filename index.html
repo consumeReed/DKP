@@ -28,12 +28,13 @@
 		var playerAliases = "";
 		
 		var client = new XMLHttpRequest();
-		client.open('GET', 'https://github.com/consumeReed/DKP/blob/main/DKPCounter/count/aliases.txt');
+		client.open('GET', 'http://raw.githubusercontent.com/consumeReed/DKP/main/DKPCounter/count/aliases.txt');
 		client.onload = function() {
   			playerAliases = client.responseText
 			document.getElementById("playeraliases").value = playerAliases;
 		}
 client.send();
+
     </script>
 </head>
 <body style="text-align:left;" onLoad="document.getElementById('playeraliases').value = playerAliases;">
